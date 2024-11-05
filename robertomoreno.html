@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía</title>
+    <link rel="stylesheet" href="styles\styles2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="logo">JJ</div>
+    </header>
+
+    <div class="sidebar" id="sidebarMenu">
+        <div class="close-menu" onclick="toggleMenu()">✖</div> <!-- Botón de cierre -->
+        <a href="index.html">Inicio</a>
+        <div class="dropdown">
+            <a href="Del 1 al 6">del 1 al 6</a>
+            <div class="dropdown-content">
+                <a href="josejimenez.html">Jose Jimenez</a>
+                <a href="acevedo.html">Kevin Acevedo</a>
+                <a href="steisy.html">Steisy Arauz</a>
+                <a href="jorgecerrud.html">Jorge Cerrud</a>
+                <a href="sara.html">Sara Bedoya</a>
+                <a href="bredsly.html">Bredsly Menchu</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="peliculas.html">del 6 al 12</a>
+            <div class="dropdown-content">
+                <a href="kevinmendieta.html">Kevin Mendieta</a>
+                <a href="vanessa.html">Vanessa Gaona</a>
+                <a href="carlos.html">Carlos Lorenzo</a>
+                <a href="dereck.html">Dereck Martinez</a>
+                <a href="jafeth.html">Jafeth Guevara</a>
+                <a href="bryan.html">Bryan Mendez</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="">del 12 al 17</a>
+            <div class="dropdown-content">
+                <a href="marcosmejia.html">Marcos Mejia</a>
+                <a href="anahys.html">Anahys Reyes</a>
+                <a href="olgagonzales.html">Olga Gonzales</a>
+                <a href="orlando.html">Orlando Dominguez</a>
+                <a href="robertomoreno.html">Roberto Moreno</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="mi_lista.html">17 al 22</a>
+            <div class="dropdown-content">
+                <a href="josafat.html">Josafat Squire</a>
+                <a href="Diego_veloz.html">Diego Veloz</a>
+                <a href="sol.html">Sol Mena</a>
+                <a href="jonathan.html">Jonathan Rodriguez</a>
+                <a href="yaritzel.html">Yaritzel Villalobos</a>
+            </div>
+        </div>  
+    </div>
+<div class="spacer"></div>
+    <div class="name-box">
+        <h1>Roberto Moreno</h1>
+    </div>
+    
+    <div class="biography-container">
+        <div class="biography-content">
+            <div class="image-frame">
+                <img src="Roberto Moreno.jpg" alt="Foto de la persona">
+            </div>
+            <p>Soy Roberto Moreno, nací el 11 de noviembre del 2007 por lo que tengo 16 años, soy
+                de Panamá, vivo en San Miguelito con mis padres y mi hermano menor, tengo un perro
+                llamado Morgan.
+                De pequeño baile en conjuntos típicos de mi escuela, en mi iglesia donde conocí al
+                Papa Francisco el 2019.
+                Cuando tenía 8 años fui operado de la apéndice y estuve internado en el hospital 1
+                semana, justo esa semana era mi cumpleaños así lo pasé en el hospital
+                recuperándome.
+                Estuve en la misma escuela desde que tuve en kinder hasta noveno grado, por lo que
+                tengo varios amigos que estudiaron conmigo desde pequeño como a Diego.
+                Mis mayores sueños actualmente tener mi propia compañía o empresa, ser un
+                profesional en mi carrera, tener una casa en la playa, conocer mucho lugares en el
+                mundo enorgullecer a mis padres.
+                Tengo un perro que se llama Morgan, he estado con él durante 5 años, me ayudó
+                mucho su compañía en el tiempo de la pandemia para no sentirme solo o desanimado.
+                En ese tiempo jugué muchos videojuegos, vi varias series y películas en casa con mi
+                familia.
+                Tengo una familia muy grande en Chiriquí por parte de mi mamá, por lo que siempre
+                intentamos visitarlos 1 vez al año.
+                Me gusta viajar, leer, ejercitarme en el gimnasio, escuchar rock, hip-hop, ir a la playa o
+                de campamento, hacer recetas de comidas, jugar baloncesto, ping pong, fútbol,
+                ajedrez y de vez en cuando jugar videojuegos.</p>
+                
+        </div>
+    </div>
+    <footer>
+        <p>Créditos: Jose Jimenez</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebarMenu');
+            sidebar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

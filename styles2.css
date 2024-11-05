@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    margin-left: auto;
+}
+
+/* Menu Icon */
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 0; /* Asegúrate de que esté en 0 para estar pegado a la parte superior */
+    left: -250px;
+    width: 250px;
+    height: 100vh; /* Asegura que cubra toda la altura de la ventana */
+    background-color: #141414;
+    padding-top: 60px; /* Espaciado desde el header (ajusta según sea necesario) */
+    transition: left 0.3s;
+    z-index: 20;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background 0.3s;
+}
+.sidebar a:hover {
+    background-color: #e50914;
+}
+.sidebar.open {
+    left: 0;
+}
+.close-menu {
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    position: absolute; /* Cambiado a absolute */
+    top: 20px; /* Espaciado desde la parte superior */
+    left: 20px; /* Espaciado desde la izquierda */
+    transition: color 0.3s;
+}
+
+.close-menu:hover {
+    color: #e50914; /* Cambia el color al pasar el mouse */
+}
+
+.dropdown {
+    position: relative; /* Posición relativa para el contenido del dropdown */
+}
+
+.dropdown-list {
+    padding: 0; /* Sin espaciado interno */
+}
+
+.dropdown-content a {
+    padding: 10px; /* Espaciado interno */
+    color: #fff; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Elementos en bloque */
+    transition: background 0.3s; /* Transición para el fondo */
+    font-size: 0.9em; /* Tamaño de texto más pequeño */
+}
+
+.dropdown-content a:hover {
+    background-color: #e50914; /* Color de fondo al pasar el mouse */
+}
+.dropdown-content {
+    display: none; /* Oculta el contenido del dropdown por defecto */
+    position: absolute; /* Posiciona el menú secundario en relación al padre */
+    left: 100%; /* Alineación a la derecha de la opción principal */
+    top: 0; /* Alineación vertical al tope */
+    background-color: #141414; /* Color de fondo */
+    min-width: 200px; /* Ancho mínimo del menú */
+    z-index: 20; /* Asegura que esté por encima de otros elementos */
+    padding: 0; /* Sin espaciado interno */
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateX(-10px); /* Desplazado ligeramente hacia la izquierda */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transición para suavizar la animación */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Muestra el contenido del dropdown al pasar el mouse */
+    opacity: 1; /* Hace que el contenido sea visible */
+    transform: translateX(0); /* Restaura la posición original */
+}
+
+
+/* Biography Section */
+.name-box {
+    text-align: center; /* Espaciado para que no quede detrás del header */
+    padding: 20px;
+}
+
+.biography-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.biography-content {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #333; /* Fondo del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.image-frame {
+    width: 25%; /* Ancho de la imagen */
+    height: auto; /* Alto automático */
+    border: 3px solid #444; /* Borde de la imagen */
+    padding: 5px; /* Espaciado interno */
+    background-color: #444; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.image-frame img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000; /* Color de fondo del footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.spacer{
+    height: 80px;
+    color: rgba(0, 0, 0, .5);
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía</title>
+    <link rel="stylesheet" href="styles/styles2.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="logo">JJ</div>
+    </header>
+
+    <div class="sidebar" id="sidebarMenu">
+        <div class="close-menu" onclick="toggleMenu()">✖</div> <!-- Botón de cierre -->
+        <a href="index.html">Inicio</a>
+        <div class="dropdown">
+            <a href="Del 1 al 6">del 1 al 6</a>
+            <div class="dropdown-content">
+                <a href="josejimenez.html">Jose Jimenez</a>
+                <a href="acevedo.html">Kevin Acevedo</a>
+                <a href="steisy.html">Steisy Arauz</a>
+                <a href="jorgecerrud.html">Jorge Cerrud</a>
+                <a href="sara.html">Sara Bedoya</a>
+                <a href="bredsly.html">Bredsly Menchu</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="peliculas.html">del 6 al 12</a>
+            <div class="dropdown-content">
+                <a href="kevinmendieta.html">Kevin Mendieta</a>
+                <a href="vanessa.html">Vanessa Gaona</a>
+                <a href="carlos.html">Carlos Lorenzo</a>
+                <a href="dereck.html">Dereck Martinez</a>
+                <a href="jafeth.html">Jafeth Guevara</a>
+                <a href="bryan.html">Bryan Mendez</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="">del 12 al 17</a>
+            <div class="dropdown-content">
+                <a href="marcosmejia.html">Marcos Mejia</a>
+                <a href="anahys.html">Anahys Reyes</a>
+                <a href="olgagonzales.html">Olga Gonzales</a>
+                <a href="orlando.html">Orlando Dominguez</a>
+                <a href="robertomoreno.html">Roberto Moreno</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="mi_lista.html">del 17 al 22</a>
+            <div class="dropdown-content">
+                <a href="josafat.html">Josafat Squire</a>
+                <a href="Diego_veloz.html">Diego Veloz</a>
+                <a href="sol.html">Sol Mena</a>
+                <a href="jonathan.html">Jonathan Rodriguez</a>
+                <a href="yaritzel.html">Yaritzel Villalobos</a>
+            </div>
+        </div>  
+    </div>
+    <div class="spacer"></div>
+
+    <div class="name-box">
+        <h1>Kevin Acevedo</h1>
+    </div>
+    
+    <div class="biography-container">
+        <div class="biography-content">
+            <div class="image-frame">
+                <img src="IMG-20241027-WA0048.jpg" alt="Foto de Kevin Acevedo">
+            </div>
+            <p>Edad: 16. Fecha de nacimiento: 8 de Diciembre de 2007</p>
+                
+            <p>Soy Kevin Acevedo, vivo en la provincia de Panamá. No sé en qué hospital nací
+            XD, pero eso no importa. Me gusta jugar fútbol y videojuegos. Voy mal en la
+            escuela, pero bueno, hay que meterle ganas. No me he quedado en ningún grado y
+            no pienso hacerlo ahora. Me agrada la gente de mi clase y la verdad nadie me cae
+            mal, eso creo. Pero bueno, si alguien lee esto, que vida ajeno y para decirle
+            que tenga suerte en lo que haga y por favor deséenme suerte porque la necesito,
+            no me ha ido bien. Hacía que gracias y adiós.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Créditos: Jose Jimenez</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebarMenu');
+            sidebar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
